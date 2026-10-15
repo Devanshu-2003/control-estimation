@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+# put your own WHOOP export here; it is personal health data, so keep it out of git
+data/whoop*.csv
+!data/sample_whoop_format_SYNTHETIC.csv
+.venv/
+figures/w*_whoop_*
+results/whoop_whoop_*

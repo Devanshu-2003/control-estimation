@@ -1,0 +1,139 @@
+{
+  "open_loop": {
+    "poles": [
+      -186.56374456018,
+      -13.93625543982001
+    ],
+    "dc_gain_rads_per_V": 19.23076923076923,
+    "no_load_speed_at_vmax_rads": 230.76923076923077,
+    "time_constants_s": [
+      0.00536009824608462,
+      0.07175528636930001
+    ]
+  },
+  "pid": {
+    "Kp": 0.11868039615775897,
+    "Ki": 2.11120340135735,
+    "Kd": 0.0005218828607503788,
+    "N": 500.0,
+    "Tt": 0.056214572258388794,
+    "margins": {
+      "gain_margin_db": Infinity,
+      "phase_margin_deg": 81.34074620703166,
+      "wcg": NaN,
+      "wcp": 31.421245204257794
+    },
+    "closed_loop_poles": [
+      -451.58092163597934,
+      -205.90779058752847,
+      -21.505643888246688,
+      -21.505643888246688
+    ]
+  },
+  "lqr": {
+    "Kx_i": 1.4938871855332965,
+    "Kx_w": 2.0877893176668887,
+    "Kz": -49.31602001548043,
+    "margins": {
+      "gain_margin_db": Infinity,
+      "phase_margin_deg": 73.50795005967538,
+      "wcg": NaN,
+      "wcp": 358.1706634712097
+    },
+    "closed_loop_poles": [
+      -236.63795940154415,
+      -236.63795940154415,
+      -26.00151830357056
+    ]
+  },
+  "step_100rads": {
+    "PID": {
+      "overshoot_pct": 4.933839671643199,
+      "rise_s": 0.051000000000000004,
+      "settle_s": 0.202,
+      "itae": 0.14338678569051222,
+      "peak_u_V": 11.999979924844075,
+      "load_dip_rads": 1.7935790547515325,
+      "load_recovery_s": 0.10299999999999998,
+      "sse_rads": 6.924096851435024e-09
+    },
+    "LQR": {
+      "overshoot_pct": 0.0,
+      "rise_s": 0.083,
+      "settle_s": 0.154,
+      "itae": 0.16414637638560384,
+      "peak_u_V": 11.999567829690958,
+      "load_dip_rads": 0.4647224899271549,
+      "load_recovery_s": 0.0,
+      "sse_rads": 4.177991286269389e-12
+    }
+  },
+  "large_step_180rads": {
+    "PID, anti-windup": {
+      "overshoot_pct": 3.6635985001982063,
+      "peak_speed_rads": 186.59447730035677
+    },
+    "PID, no anti-windup": {
+      "overshoot_pct": 17.93262658338103,
+      "peak_speed_rads": 212.27872785008586
+    },
+    "LQR + integral": {
+      "overshoot_pct": 0.0,
+      "peak_speed_rads": 179.99999999999488
+    }
+  },
+  "robustness": {
+    "PID": {
+      "J x0.5": {
+        "overshoot_pct": 0.0,
+        "settle_s": 0.121
+      },
+      "J x2": {
+        "overshoot_pct": 15.794172535257134,
+        "settle_s": 0.308
+      },
+      "R x0.8": {
+        "overshoot_pct": 2.176551027614593,
+        "settle_s": 0.13
+      },
+      "R x1.2": {
+        "overshoot_pct": 7.278469047064647,
+        "settle_s": 0.23700000000000002
+      },
+      "K x0.8": {
+        "overshoot_pct": 11.611363912678343,
+        "settle_s": 0.244
+      },
+      "K x1.2": {
+        "overshoot_pct": 0.25181895479663297,
+        "settle_s": 0.094
+      }
+    },
+    "LQR": {
+      "J x0.5": {
+        "overshoot_pct": 0.0,
+        "settle_s": 0.162
+      },
+      "J x2": {
+        "overshoot_pct": 0.0,
+        "settle_s": 0.145
+      },
+      "R x0.8": {
+        "overshoot_pct": 0.0,
+        "settle_s": 0.155
+      },
+      "R x1.2": {
+        "overshoot_pct": 0.0,
+        "settle_s": 0.153
+      },
+      "K x0.8": {
+        "overshoot_pct": 0.0,
+        "settle_s": 0.149
+      },
+      "K x1.2": {
+        "overshoot_pct": 0.0,
+        "settle_s": 0.157
+      }
+    }
+  }
+}

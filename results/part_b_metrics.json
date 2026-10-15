@@ -1,0 +1,78 @@
+{
+  "noise": {
+    "sigma": 2.0,
+    "sigma_v": 0.1,
+    "sigma_T": 0.005
+  },
+  "estimation_2state": {
+    "speed_rmse_raw_measurement": 1.9993978429255528,
+    "speed_rmse_kf": 0.17491713366140735,
+    "current_rmse_kf": 0.030252713151853454,
+    "current_std_true": 0.4405285380029005
+  },
+  "closed_loop_noise_20seeds": {
+    "PID": {
+      "speed_err_rms": {
+        "mean": 0.27646262490918355,
+        "std": 0.03919702835117994
+      },
+      "voltage_std": {
+        "mean": 0.6096076499295906,
+        "std": 0.01647006013220589
+      },
+      "load_dip_rads": {
+        "mean": 2.1066436761144898,
+        "std": 0.29294065561907495
+      }
+    },
+    "LQG": {
+      "speed_err_rms": {
+        "mean": 0.2834271823862621,
+        "std": 0.03924558388418725
+      },
+      "voltage_std": {
+        "mean": 0.1700495900657834,
+        "std": 0.009297429429223618
+      },
+      "load_dip_rads": {
+        "mean": 2.1661602146617716,
+        "std": 0.3029798778792851
+      }
+    }
+  },
+  "consistency": {
+    "samples": 19000,
+    "mean_nis": 0.994627136746251,
+    "mean_nis_expected": 1.0,
+    "mean_nis_95pct_band": [
+      0.979890824299131,
+      1.0201091757008691
+    ],
+    "fraction_nis_inside_chi2_95": 0.9512631578947368,
+    "acf_lag1": -0.0021563128160944534,
+    "acf_fraction_inside_band": 1.0,
+    "acf_band": 0.014219334502156226
+  },
+  "load_torque_estimation": {
+    "torque_estimate_mean_after_step": 0.020120717974436837,
+    "torque_true": 0.02,
+    "current_bias_2state_A": -0.22664002940128422,
+    "current_bias_3state_A": 0.0006253401918489266,
+    "current_rmse_2state_A": 0.22914250172933864,
+    "current_rmse_3state_A": 0.03663719051011748,
+    "sigma_dw_sweep": {
+      "0.0005": {
+        "torque_noise_std_before_step": 0.0017224301544443482,
+        "time_to_90pct_s": 0.08099999999999996
+      },
+      "0.002": {
+        "torque_noise_std_before_step": 0.0044984176362233685,
+        "time_to_90pct_s": 0.03499999999999992
+      },
+      "0.008": {
+        "torque_noise_std_before_step": 0.012571562781518348,
+        "time_to_90pct_s": 0.013000000000000123
+      }
+    }
+  }
+}
